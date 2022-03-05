@@ -8,6 +8,9 @@ import {
 @InputType()
 export class UpdateUserInput {
   @Field()
+  userId: string;
+
+  @Field()
   @IsNotEmptyString()
   @IsEmailTidy()
   email: string;
